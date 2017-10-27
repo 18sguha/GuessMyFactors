@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
     var game = GTFGame()
@@ -16,7 +17,7 @@ class ViewController: UIViewController {
         firstFactor.delegate = self
         secondFactor.delegate = self
         var result = game.playTheGame()
-        welcome.text = "The sum is  \(String(result.0)) and the product is  \(String(result.1))! Guess the factors!"
+        welcome.text = "The sum is \(String(result.0)) and the product is \(String(result.1))! Guess the factors!"
         
     }
     
@@ -30,6 +31,8 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var firstFactor: UITextField!
     @IBOutlet weak var secondFactor: UITextField!
+    
+    @IBOutlet weak var scoreButton: UILabel!
     
     @IBAction func playAgain(_ sender: UIButton) {
         var result = game.playTheGame()
@@ -54,11 +57,14 @@ class ViewController: UIViewController {
                 if let textsecond = secondFactor.text {
                     if let guess2 = Int(textsecond) {
                         welcome.text = game.checkGuess(guessOne: guess1, guessTwo: guess2)
+                        scoreButton.text = "Score: \(game.score)"
+        }
+                }
+
+        }
         }
     }
-        }
-        }
-    }
+
     
 }
 

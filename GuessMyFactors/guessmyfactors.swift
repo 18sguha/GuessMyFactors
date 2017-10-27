@@ -10,6 +10,8 @@ import Foundation
 class GTFGame {
     var firstNumber = 0
     var secondNumber = 0
+    var score = 0
+    var difficulty = "easy"
     
     func generateNumbers() -> (Int, Int) {
         firstNumber = Int(arc4random_uniform(5) + 7)
@@ -41,8 +43,10 @@ class GTFGame {
     func checkGuess(guessOne:Int, guessTwo: Int ) -> String {
      //   var guess = getUserGuess(sum: sum, product: product).components(separatedBy: ",")
         if (guessOne == firstNumber) && (guessTwo == secondNumber) {
+            score = score + 1
             return ("You got it!")
         }else if (guessOne == secondNumber) && (guessTwo == firstNumber){
+            score = score + 1
             return ("You got it!")
             
         } else {
