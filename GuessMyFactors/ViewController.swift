@@ -11,13 +11,30 @@ import AVFoundation
 
 class ViewController: UIViewController {
     var game = GTFGame()
-
+  //  var backgroundMusicPlayer: AVAudioPlayer?
+    
+   // var player:AVAudioPlayer = AVAudioPlayer()
+    
+   //  @discardableResult func playSound(named soundName: String) -> AVAudioPlayer {
+     //   let audioPath = Bundle.main.path(forResource: "correct", ofType: "mp3")
+       // do {
+         //   try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: audioPath!))
+    //    } catch {
+           // print(error)
+    //    }
+    //    return player
+  //  }
+    
+    @IBOutlet weak var guessLabel: UILabel!
+    
     override func viewDidLoad() {
-        super.viewDidLoad()
+    super.viewDidLoad()
+   //     audioPlayer = AVAudioPlayer(contentsOfURL: correctSound, error: nil)
         firstFactor.delegate = self
         secondFactor.delegate = self
         var result = game.playTheGame()
-        welcome.text = "The sum is \(String(result.0)) and the product is \(String(result.1))! Guess the factors!"
+        welcome.text = "The sum is \(String(result.0)) and the product is \(String(result.1))! Can you guess the factors?"
+
         
     }
     
@@ -36,15 +53,15 @@ class ViewController: UIViewController {
     
     @IBAction func playAgain(_ sender: UIButton) {
         var result = game.playTheGame()
-        welcome.text = "The sum is \(String(result.0)) \n and the product is \(String(result.1))! Guess the factors!"
+        welcome.text = "The sum is \(String(result.0)) \n and the product is \(String(result.1))!  Can you guess the factors?"
         firstFactor.text = ""
         secondFactor.text = ""
     }
     
 
         // Do any additional setup after loading the view, typically from a nib.
-    
- 
+  
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -63,10 +80,13 @@ class ViewController: UIViewController {
 
         }
         }
+      //  if welcome.text == "You got it!" {
+        //    playSound(named: "correct")
+        }
     }
 
     
-}
+
 
 extension ViewController: UITextFieldDelegate{
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {

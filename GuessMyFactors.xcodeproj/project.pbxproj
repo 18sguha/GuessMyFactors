@@ -53,6 +53,7 @@
 		1D3D8B8E1F7309E7004F13B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1D3D8B9A1F730B58004F13B5 /* guessmyfactors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = guessmyfactors.swift; sourceTree = "<group>"; };
 		1D709C821F9165320020FF36 /* InstructionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionViewController.swift; sourceTree = "<group>"; };
+		1DC7F3051FA39B65008FBD7D /* correct.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = correct.mp3; path = ../../../correct.mp3; sourceTree = "<group>"; };
 		1DD7BC3F1F966C81007E500C /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		1DD7BC411F966CB7007E500C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -115,6 +116,7 @@
 				1D3D8B731F7309E7004F13B5 /* Assets.xcassets */,
 				1D3D8B751F7309E7004F13B5 /* LaunchScreen.storyboard */,
 				1D3D8B781F7309E7004F13B5 /* Info.plist */,
+				1DC7F3051FA39B65008FBD7D /* correct.mp3 */,
 			);
 			path = GuessMyFactors;
 			sourceTree = "<group>";
@@ -205,6 +207,7 @@
 				TargetAttributes = {
 					1D3D8B681F7309E7004F13B5 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = NJZ99473QL;
 						ProvisioningStyle = Automatic;
 					};
 					1D3D8B7C1F7309E7004F13B5 = {
@@ -430,6 +433,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = NJZ99473QL;
 				INFOPLIST_FILE = GuessMyFactors/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Guha.GuessMyFactors;
@@ -442,6 +446,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = NJZ99473QL;
 				INFOPLIST_FILE = GuessMyFactors/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Guha.GuessMyFactors;
