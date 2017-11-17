@@ -32,7 +32,9 @@ class ViewController: UIViewController {
    //     audioPlayer = AVAudioPlayer(contentsOfURL: correctSound, error: nil)
         firstFactor.delegate = self
         secondFactor.delegate = self
-        var result = game.playTheGame()
+        difficultyLevel.setTitle("Easy", forSegmentAt: 0)
+        difficultyLevel.setTitle("Hard", forSegmentAt: 1)
+        var result = game.playTheGame(difficulty: difficultyLevel.titleForSegment(at: difficultyLevel.selectedSegmentIndex)!)
         welcome.text = "The sum is \(String(result.0)) and the product is \(String(result.1))! Can you guess the factors?"
 
         
@@ -52,7 +54,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var scoreButton: UILabel!
     
     @IBAction func playAgain(_ sender: UIButton) {
-        var result = game.playTheGame()
+        var result = game.playTheGame(difficulty: difficultyLevel.titleForSegment(at: difficultyLevel.selectedSegmentIndex)!)
         welcome.text = "The sum is \(String(result.0)) \n and the product is \(String(result.1))!  Can you guess the factors?"
         firstFactor.text = ""
         secondFactor.text = ""
@@ -67,6 +69,7 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBOutlet weak var difficultyLevel: UISegmentedControl!
     @IBAction func guessButton(_ sender: UIButton) {
         
         if let textEntry = firstFactor.text {
@@ -75,6 +78,13 @@ class ViewController: UIViewController {
                     if let guess2 = Int(textsecond) {
                         welcome.text = game.checkGuess(guessOne: guess1, guessTwo: guess2)
                         scoreButton.text = "Score: \(game.score)"
+                        if welcome.text == "You got it!" {
+                            var result = game.playTheGame(difficulty: difficultyLevel.titleForSegment(at: difficultyLevel.selectedSegmentIndex)!)
+                            welcome.text = "The sum is \(String(result.0)) \n and the product is \(String(result.1))!  Can you guess the factors?"
+                            firstFactor.text = ""
+                            secondFactor.text = ""
+                        }
+                        }
         }
                 }
 
@@ -83,7 +93,7 @@ class ViewController: UIViewController {
       //  if welcome.text == "You got it!" {
         //    playSound(named: "correct")
         }
-    }
+
 
     
 

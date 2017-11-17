@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "GuessMyFactors/guessmyfactors.swift"
-            timestampString = "531719904.030025"
+            timestampString = "532648252.004786"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
             landmarkName = "checkGuess(guessOne:guessTwo:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -26,75 +26,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "GuessMyFactors/ViewController.swift"
-            timestampString = "532029142.644255"
+            timestampString = "532648252.004916"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
-            landmarkName = "unknown"
-            landmarkType = "0">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "GuessMyFactors.ViewController.scoreButton.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UILabel&gt;"
-                  moduleName = "GuessMyFactors"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/sreyaguha/Desktop/AT%20Computer%20Science/GuessMyFactors/GuessMyFactors/ViewController.swift"
-                  timestampString = "532028528.656756"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "52"
-                  endingLineNumber = "52"
-                  offsetFromSymbolStart = "78">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "GuessMyFactors.ViewController.scoreButton.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UILabel&gt;"
-                  moduleName = "GuessMyFactors"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/sreyaguha/Desktop/AT%20Computer%20Science/GuessMyFactors/GuessMyFactors/ViewController.swift"
-                  timestampString = "532028528.661352"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "52"
-                  endingLineNumber = "52"
-                  offsetFromSymbolStart = "86">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "GuessMyFactors.ViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; GuessMyFactors.ViewController"
-                  moduleName = "GuessMyFactors"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/sreyaguha/Desktop/AT%20Computer%20Science/GuessMyFactors/GuessMyFactors/ViewController.swift"
-                  timestampString = "532028528.66623"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "52"
-                  endingLineNumber = "52"
-                  offsetFromSymbolStart = "696">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "GuessMyFactors.ViewController.init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;GuessMyFactors.ViewController&gt;"
-                  moduleName = "GuessMyFactors"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/sreyaguha/Desktop/AT%20Computer%20Science/GuessMyFactors/GuessMyFactors/ViewController.swift"
-                  timestampString = "532028528.670788"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "52"
-                  endingLineNumber = "52"
-                  offsetFromSymbolStart = "632">
-               </Location>
-            </Locations>
+            startingLineNumber = "73"
+            endingLineNumber = "73"
+            landmarkName = "guessButton(_:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

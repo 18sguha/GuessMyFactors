@@ -13,9 +13,14 @@ class GTFGame {
     var score = 0
     var difficulty = "easy"
     
-    func generateNumbers() -> (Int, Int) {
-        firstNumber = Int(arc4random_uniform(5) + 7)
-        secondNumber = Int(arc4random_uniform(5) + 7)
+    func generateEasyNumbers() -> (Int, Int) {
+        firstNumber = Int(arc4random_uniform(7) + 5)
+        secondNumber = Int(arc4random_uniform(7) + 5)
+        return (firstNumber + secondNumber, firstNumber * secondNumber)
+    }
+    func generateHardNumbers() -> (Int, Int) {
+        firstNumber = Int(arc4random_uniform(7) + 10)
+        secondNumber = Int(arc4random_uniform(7) + 10)
         return (firstNumber + secondNumber, firstNumber * secondNumber)
     }
     
@@ -42,6 +47,7 @@ class GTFGame {
     
     func checkGuess(guessOne:Int, guessTwo: Int ) -> String {
      //   var guess = getUserGuess(sum: sum, product: product).components(separatedBy: ",")
+        var scoreVar = false
         if (guessOne == firstNumber) && (guessTwo == secondNumber) {
             score = score + 1
             return ("You got it!")
@@ -71,14 +77,20 @@ class GTFGame {
         return "n"
     }
     
-    
-    func playTheGame () -> (Int, Int) {
-        let result = generateNumbers()
-        return result
+    func playTheGame (difficulty: String) -> (Int, Int) {
+        if difficulty == "Easy" {
+            return generateEasyNumbers()
+        } else if difficulty == "Hard" {
+            return generateHardNumbers()
+        } else {
+            return generateEasyNumbers()
+        }
+        
+    }
         
       //  return (numbers.0,numbers.1, generateSum(firstNumber: numbers.0, secondNumber: numbers.1), generateProduct(firstNumber: numbers.0, secondNumber: numbers.1))
         
-    }
+    
     
         
       //  let sum = generateSum(firstNumber: numbers.0, secondNumber: numbers.1)

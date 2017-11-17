@@ -42,107 +42,121 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="190" translatesAutoresizingMaskIntoConstraints="NO" id="aM1-Kb-fK4">
-                                <rect key="frame" x="73" y="114.5" width="228" height="438"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="65" translatesAutoresizingMaskIntoConstraints="NO" id="GRx-0F-s7c">
+                                <rect key="frame" x="73.5" y="122.5" width="228" height="423"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="BIH-vn-yj4">
-                                        <rect key="frame" x="0.0" y="0.0" width="228" height="212"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lc8-tI-9q1">
+                                        <rect key="frame" x="0.0" y="0.0" width="228" height="23.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="228" id="Jso-lc-5SV"/>
+                                        </constraints>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Welcome to Guess my Factor!">
+                                                <attributes>
+                                                    <font key="NSFont" size="17" name="Avenir-Book"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="YHt-Pc-KHV">
+                                        <rect key="frame" x="0.0" y="88.5" width="228" height="334.5"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="fh9-Wy-1Kd">
-                                                <rect key="frame" x="0.0" y="0.0" width="228" height="23.5"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="YJg-jx-BPx">
+                                                <rect key="frame" x="0.0" y="0.0" width="228" height="258.5"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lc8-tI-9q1">
-                                                        <rect key="frame" x="0.0" y="0.0" width="228" height="23.5"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="width" constant="228" id="Jso-lc-5SV"/>
-                                                        </constraints>
-                                                        <attributedString key="attributedText">
-                                                            <fragment content="Welcome to Guess my Factor!">
-                                                                <attributes>
-                                                                    <font key="NSFont" size="17" name="Avenir-Book"/>
-                                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                </attributes>
-                                                            </fragment>
-                                                        </attributedString>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                            </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="VC3-oG-oEb">
-                                                <rect key="frame" x="40.5" y="23.5" width="147" height="188.5"/>
-                                                <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="XPZ-99-Vb0">
-                                                        <rect key="frame" x="0.0" y="0.0" width="147" height="106.5"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="iAw-J6-mPZ">
+                                                        <rect key="frame" x="0.0" y="0.0" width="228" height="157"/>
                                                         <subviews>
-                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Yqz-HY-e1m">
-                                                                <rect key="frame" x="0.0" y="0.0" width="147" height="75"/>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="jPQ-rI-V62">
+                                                                <rect key="frame" x="0.0" y="0.0" width="228" height="70"/>
                                                                 <subviews>
                                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Factor" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gzi-AS-zfF">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="147" height="30"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="228" height="30"/>
                                                                         <nil key="textColor"/>
                                                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                                                         <textInputTraits key="textInputTraits"/>
                                                                     </textField>
                                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Second Factor" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AYe-vV-NEd">
-                                                                        <rect key="frame" x="0.0" y="45" width="147" height="30"/>
+                                                                        <rect key="frame" x="0.0" y="40" width="228" height="30"/>
                                                                         <nil key="textColor"/>
                                                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                                                         <textInputTraits key="textInputTraits"/>
                                                                     </textField>
                                                                 </subviews>
                                                             </stackView>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FW6-em-jvr">
-                                                                <rect key="frame" x="0.0" y="83" width="147" height="23.5"/>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="KWA-aq-9va">
+                                                                <rect key="frame" x="0.0" y="85" width="228" height="72"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hhD-BS-Fc2">
+                                                                        <rect key="frame" x="88" y="0.0" width="52" height="36"/>
+                                                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                                                        <state key="normal" title="Guess!"/>
+                                                                        <connections>
+                                                                            <action selector="guessButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mvK-QX-z6K"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qXF-O3-zEL">
+                                                                        <rect key="frame" x="40.5" y="36" width="147" height="36"/>
+                                                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                                                        <state key="normal" title="Another Math Fact!"/>
+                                                                        <connections>
+                                                                            <action selector="playAgain:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wey-r9-gYX"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="e6Q-ww-udC">
+                                                        <rect key="frame" x="69.5" y="187" width="89" height="71.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 0" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FW6-em-jvr">
+                                                                <rect key="frame" x="0.0" y="0.0" width="89" height="23.5"/>
                                                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
+                                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="pL7-6G-ler">
+                                                                <rect key="frame" x="0.0" y="43.5" width="89" height="29"/>
+                                                                <segments>
+                                                                    <segment title="Easy"/>
+                                                                    <segment title="Hard"/>
+                                                                </segments>
+                                                            </segmentedControl>
                                                         </subviews>
-                                                    </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ZqO-b9-qtn">
-                                                        <rect key="frame" x="0.0" y="116.5" width="147" height="72"/>
-                                                        <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hhD-BS-Fc2">
-                                                                <rect key="frame" x="0.0" y="0.0" width="147" height="36"/>
-                                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
-                                                                <state key="normal" title="Guess!"/>
-                                                                <connections>
-                                                                    <action selector="guessButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mvK-QX-z6K"/>
-                                                                </connections>
-                                                            </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qXF-O3-zEL">
-                                                                <rect key="frame" x="0.0" y="36" width="147" height="36"/>
-                                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
-                                                                <state key="normal" title="Another Math Fact!"/>
-                                                                <connections>
-                                                                    <action selector="playAgain:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wey-r9-gYX"/>
-                                                                </connections>
-                                                            </button>
-                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="FW6-em-jvr" firstAttribute="width" secondItem="e6Q-ww-udC" secondAttribute="width" id="0xL-MR-IKd"/>
+                                                        </constraints>
                                                     </stackView>
                                                 </subviews>
                                             </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dtu-Nh-eSd">
+                                                <rect key="frame" x="70.5" y="298.5" width="87" height="36"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                                <state key="normal" title="Instructions"/>
+                                                <connections>
+                                                    <segue destination="TvH-eK-jMy" kind="presentation" id="bwF-tW-wki"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dtu-Nh-eSd">
-                                        <rect key="frame" x="70.5" y="402" width="87" height="36"/>
-                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
-                                        <state key="normal" title="Instructions"/>
-                                        <connections>
-                                            <segue destination="TvH-eK-jMy" kind="presentation" id="3U0-ns-ouZ"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="gzi-AS-zfF" firstAttribute="width" secondItem="GRx-0F-s7c" secondAttribute="width" id="IsJ-s8-Xdg"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.89596647024154663" green="0.96442610025405884" blue="0.99794107675552368" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="aM1-Kb-fK4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="M8N-yi-IcA"/>
-                            <constraint firstItem="aM1-Kb-fK4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sCs-72-AY7"/>
+                            <constraint firstItem="GRx-0F-s7c" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="D98-zS-oiz"/>
+                            <constraint firstItem="GRx-0F-s7c" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nf2-m2-VTL"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="gKx-mV-tHU"/>
                     <connections>
+                        <outlet property="difficultyLevel" destination="pL7-6G-ler" id="WOT-g6-fal"/>
                         <outlet property="firstFactor" destination="gzi-AS-zfF" id="AwH-0W-h9M"/>
                         <outlet property="scoreButton" destination="FW6-em-jvr" id="xMt-W8-X27"/>
                         <outlet property="secondFactor" destination="AYe-vV-NEd" id="fUi-qR-nfB"/>
@@ -166,7 +180,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="200" translatesAutoresizingMaskIntoConstraints="NO" id="hkn-V8-hqv">
-                                <rect key="frame" x="26" y="176" width="323" height="315"/>
+                                <rect key="frame" x="26" y="199" width="323" height="269"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Guess My Factor!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aQU-U7-VQf">
                                         <rect key="frame" x="0.0" y="0.0" width="323" height="33"/>
@@ -175,7 +189,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="BeV-dd-D6f">
-                                        <rect key="frame" x="120.5" y="233" width="82" height="82"/>
+                                        <rect key="frame" x="120.5" y="233" width="82" height="36"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1R8-zc-KSo">
                                                 <rect key="frame" x="0.0" y="0.0" width="82" height="36"/>
@@ -183,14 +197,6 @@
                                                 <state key="normal" title="Play Game"/>
                                                 <connections>
                                                     <segue destination="BYZ-38-t0r" kind="show" id="Zts-C9-zG4"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o8t-uP-cSP">
-                                                <rect key="frame" x="0.0" y="46" width="82" height="36"/>
-                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
-                                                <state key="normal" title="Settings"/>
-                                                <connections>
-                                                    <segue destination="5fN-IA-mEB" kind="show" id="3uH-q0-0JK"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -210,84 +216,6 @@
             </objects>
             <point key="canvasLocation" x="-866.39999999999998" y="160.56971514242881"/>
         </scene>
-        <!--Setting View Controller-->
-        <scene sceneID="xnl-s0-KvW">
-            <objects>
-                <viewController id="5fN-IA-mEB" customClass="SettingViewController" customModule="GuessMyFactors" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="xDD-C0-Pdg"/>
-                        <viewControllerLayoutGuide type="bottom" id="juq-TD-VeU"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="lrw-kt-hfD">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yBx-g0-hXP">
-                                <rect key="frame" x="144" y="119" width="87" height="33"/>
-                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="24"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="gUG-ns-c53">
-                                <rect key="frame" x="71.5" y="205" width="232.5" height="76"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="77" translatesAutoresizingMaskIntoConstraints="NO" id="i0m-Lh-n45">
-                                        <rect key="frame" x="0.0" y="0.0" width="232.5" height="28"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Difficulty" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ETh-sF-3IB">
-                                                <rect key="frame" x="0.0" y="0.0" width="66.5" height="28"/>
-                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="jUZ-8e-P2f">
-                                                <rect key="frame" x="143.5" y="0.0" width="89" height="29"/>
-                                                <segments>
-                                                    <segment title="Easy"/>
-                                                    <segment title="Hard"/>
-                                                </segments>
-                                            </segmentedControl>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="77" translatesAutoresizingMaskIntoConstraints="NO" id="7Hk-kg-CIc">
-                                        <rect key="frame" x="19" y="48" width="195" height="28"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Sound" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vxC-Q4-5HE">
-                                                <rect key="frame" x="0.0" y="0.0" width="49" height="28"/>
-                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="jpR-Np-qVd">
-                                                <rect key="frame" x="126" y="0.0" width="69" height="29"/>
-                                                <segments>
-                                                    <segment title="On"/>
-                                                    <segment title="Off"/>
-                                                </segments>
-                                            </segmentedControl>
-                                        </subviews>
-                                    </stackView>
-                                </subviews>
-                            </stackView>
-                        </subviews>
-                        <color key="backgroundColor" red="0.89596647024154663" green="0.96442610025405884" blue="0.99794107675552368" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="yBx-g0-hXP" firstAttribute="leading" secondItem="lrw-kt-hfD" secondAttribute="leading" constant="144" id="9ir-fo-RBD"/>
-                            <constraint firstItem="gUG-ns-c53" firstAttribute="centerX" secondItem="lrw-kt-hfD" secondAttribute="centerX" id="SAs-NH-eqS"/>
-                            <constraint firstItem="gUG-ns-c53" firstAttribute="leading" secondItem="lrw-kt-hfD" secondAttribute="leading" constant="71.5" id="SFp-mz-8ti"/>
-                            <constraint firstItem="yBx-g0-hXP" firstAttribute="centerX" secondItem="lrw-kt-hfD" secondAttribute="centerX" id="m8f-lU-TJz"/>
-                            <constraint firstAttribute="trailing" secondItem="yBx-g0-hXP" secondAttribute="trailing" constant="144" id="sKr-X3-7kI"/>
-                            <constraint firstAttribute="trailing" secondItem="gUG-ns-c53" secondAttribute="trailing" constant="71" id="uMe-Qm-fYP"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="soundSwitch" destination="jpR-Np-qVd" id="akt-39-ce4"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0nU-cd-wD5" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-866" y="967"/>
-        </scene>
         <!--Instruction View Controller-->
         <scene sceneID="T8y-nR-OtI">
             <objects>
@@ -301,27 +229,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="6DJ-wL-wku">
-                                <rect key="frame" x="8" y="92.5" width="359" height="477"/>
+                                <rect key="frame" x="17.5" y="45" width="340" height="577"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How to Play" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lYU-q0-f2l">
-                                        <rect key="frame" x="99.5" y="0.0" width="160" height="41"/>
+                                        <rect key="frame" x="90" y="0.0" width="160" height="41"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GZW-dP-abd">
-                                        <rect key="frame" x="0.0" y="41" width="359" height="400"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GZW-dP-abd">
+                                        <rect key="frame" x="0.0" y="41" width="340" height="480"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="359" id="TDb-Zb-nEX"/>
-                                            <constraint firstAttribute="height" constant="400" id="wRi-zx-XKV"/>
+                                            <constraint firstAttribute="width" constant="340" id="TDb-Zb-nEX"/>
+                                            <constraint firstAttribute="height" constant="480" id="wRi-zx-XKV"/>
                                         </constraints>
-                                        <string key="text">Guess my Factor is a game that allows users to test their addition and multiplication skills. You are given a product and a sum and you must guess the factors. For example, if you are given a product of 50 and a sum of 15, the factors would be 5 and 10 because 5 x 10 = 50 and 5 + 10 = 15</string>
-                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="21"/>
+                                        <string key="text">Guess my Factor is a game that allows users to test their addition and multiplication skills. You are given a product and a sum and you must guess the factors. For example, if you are given a product of 50 and a sum of 15, the factors would be 5 and 10 because 5 x 10 = 50 and 5 + 10 = 15. You can select easy if you want to just reinforce your skills or hard if you're up for a challenge!</string>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7cA-Fj-Ete">
-                                        <rect key="frame" x="158.5" y="441" width="42" height="36"/>
+                                        <rect key="frame" x="149" y="521" width="42" height="56"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                         <state key="normal" title="Done"/>
                                         <connections>
@@ -333,9 +261,10 @@
                         </subviews>
                         <color key="backgroundColor" red="0.89596647024154663" green="0.96442610025405884" blue="0.99794107675552368" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="GZW-dP-abd" firstAttribute="centerY" secondItem="HG6-0S-44M" secondAttribute="centerY" id="1Wy-Hj-7IM"/>
-                            <constraint firstItem="6DJ-wL-wku" firstAttribute="centerX" secondItem="HG6-0S-44M" secondAttribute="centerX" id="ILR-cb-EuB"/>
-                            <constraint firstItem="GZW-dP-abd" firstAttribute="centerX" secondItem="HG6-0S-44M" secondAttribute="centerX" id="iIt-An-v7W"/>
+                            <constraint firstItem="6DJ-wL-wku" firstAttribute="top" secondItem="Gdy-s5-0bH" secondAttribute="bottom" constant="25" id="0rZ-5B-OK7"/>
+                            <constraint firstItem="e9i-0b-d5i" firstAttribute="top" secondItem="6DJ-wL-wku" secondAttribute="bottom" constant="45" id="6GQ-tb-fqU"/>
+                            <constraint firstItem="6DJ-wL-wku" firstAttribute="centerX" secondItem="HG6-0S-44M" secondAttribute="centerX" id="rRM-OR-XVe"/>
+                            <constraint firstItem="6DJ-wL-wku" firstAttribute="centerY" secondItem="HG6-0S-44M" secondAttribute="centerY" id="yYn-qQ-w9f"/>
                         </constraints>
                     </view>
                 </viewController>
