@@ -80,7 +80,7 @@ class ViewController: UIViewController {
                         scoreButton.text = "Score: \(game.score)"
                         if welcome.text == "You got it!" {
                             var result = game.playTheGame(difficulty: difficultyLevel.titleForSegment(at: difficultyLevel.selectedSegmentIndex)!)
-                            welcome.text = "The sum is \(String(result.0)) \n and the product is \(String(result.1))!  Can you guess the factors?"
+                            welcome.text = "You got it! Next problem: The sum is \(String(result.0)) \n and the product is \(String(result.1))!  Can you guess the factors?"
                             firstFactor.text = ""
                             secondFactor.text = ""
                         }
