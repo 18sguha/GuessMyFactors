@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="hbd-ap-klF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="hbd-ap-klF">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -180,8 +179,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="200" translatesAutoresizingMaskIntoConstraints="NO" id="hkn-V8-hqv">
-                                <rect key="frame" x="0.0" y="199" width="0.0" height="269"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="hkn-V8-hqv">
+                                <rect key="frame" x="0.0" y="251" width="0.0" height="165"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Guess My Factor!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aQU-U7-VQf">
                                         <rect key="frame" x="0.0" y="0.0" width="0.0" height="33"/>
@@ -190,7 +189,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="BeV-dd-D6f">
-                                        <rect key="frame" x="146.5" y="233" width="82" height="36"/>
+                                        <rect key="frame" x="146.5" y="83" width="82" height="82"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1R8-zc-KSo">
                                                 <rect key="frame" x="0.0" y="0.0" width="82" height="36"/>
@@ -200,19 +199,18 @@
                                                     <segue destination="BYZ-38-t0r" kind="show" id="Zts-C9-zG4"/>
                                                 </connections>
                                             </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9OI-Wf-I5w">
+                                                <rect key="frame" x="0.0" y="46" width="82" height="36"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                                <state key="normal" title="About"/>
+                                                <connections>
+                                                    <segue destination="9fj-b6-Wbs" kind="show" id="79M-lr-x6G"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9OI-Wf-I5w">
-                                <rect key="frame" x="166" y="486" width="49" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
-                                <state key="normal" title="About"/>
-                                <connections>
-                                    <segue destination="9fj-b6-Wbs" kind="show" id="79M-lr-x6G"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.89596647024154663" green="0.96442610025405884" blue="0.99794107675552368" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -245,19 +243,22 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Link to Icons8: icons8.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b8r-YS-q9j">
-                                <rect key="frame" x="40" y="117" width="205" height="21"/>
-                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="g4s-jW-g9e">
+                                <rect key="frame" x="87.5" y="322" width="200" height="23.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Link to Icons8: icons8.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b8r-YS-q9j">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="23.5"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.89596647019999998" green="0.96442610029999998" blue="0.99794107679999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="b8r-YS-q9j" secondAttribute="trailing" constant="114" id="G8t-Rp-Wp3"/>
-                            <constraint firstItem="0Rh-WS-Y5B" firstAttribute="top" secondItem="b8r-YS-q9j" secondAttribute="bottom" constant="529" id="XsZ-Zh-r3u"/>
-                            <constraint firstItem="b8r-YS-q9j" firstAttribute="leading" secondItem="9Il-eq-h1H" secondAttribute="leadingMargin" constant="24" id="bFQ-XD-Jck"/>
-                            <constraint firstItem="b8r-YS-q9j" firstAttribute="top" secondItem="OZu-pU-8H6" secondAttribute="bottom" constant="53" id="pVW-7h-hRK"/>
+                            <constraint firstItem="g4s-jW-g9e" firstAttribute="centerY" secondItem="9Il-eq-h1H" secondAttribute="centerY" id="RGl-yu-Coo"/>
+                            <constraint firstItem="g4s-jW-g9e" firstAttribute="centerX" secondItem="9Il-eq-h1H" secondAttribute="centerX" id="ZRr-kK-vU1"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="noX-GT-yBq"/>
